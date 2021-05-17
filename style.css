@@ -1,0 +1,166 @@
+/* Some default stuff */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    position: fixed;
+    background: #101010;
+}
+
+.inner-header {
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1 {
+    color:white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: 'Tangerine';
+}
+
+.logo-container h1 span {
+    font-weight: 800;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.content {
+    padding-top: 0px;
+}
+
+/* Introduction Styling */
+.introduction {
+    padding: 60px;
+    padding-top: 80px;
+    text-align: center;
+    background: #101010;
+    color: white;
+    font-size: 25px;
+}
+
+.about-me {
+    padding: 64px;
+    font-family: 'Montserrat';
+}
+
+.about-me h2 {
+    font-style:oblique;
+    font-size: 32px;
+}
+
+.about-me hr {
+    margin: 10px 0px;
+}
+
+/* Skills Section */
+
+.my-skills {
+    margin-top: 20px;
+}
+
+.container{
+    width: 50%;
+    background-color: #ddd;
+}
+
+/* .skills {
+    text-align: right;
+    padding: 10px 4px;
+    color:white;
+}
+
+.ios { width: 90%; background-color: #04AA6D;} */
+
+.row,
+.row > .column {
+    padding: 4px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.work-history {
+    padding-top: 30px;
+}
+
+.project-container {
+    /* background-color: red; */
+    /* width: 90%; */
+    padding: 25px 100px;
+    margin-top: 30px;
+    display: flex;
+    font-family: 'Montserrat';
+    align-items: center;
+    /* justify-content: center; */
+    /* height: 300px; */
+}
+.project-image {
+    padding-right: 40px;
+}
+
+.project-image img {
+    height: 128px;
+    width: 128px; 
+}
+
+.project-portfolio hr {
+    opacity: 30%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
